@@ -1,10 +1,14 @@
-# Python Data Engineering learnig guide by @floripacodegurus
+# 🧪 Python Data Engineering learnig guide by @floripacodegurus
 
 ## Overview
 
-This project provides a basic introduction to data engineering with Python. It covers setting up a Python environment, reading data from a CSV file, performing data validation and aggregations, and writing the results to a local SQLite or PostgreSQL databases.
+This is a beginner-friendly Python project that demonstrates basic data engineering workflows:
 
-This is the steps for the basic part.
+- Reading data from a CSV file
+- Performing aggregations using `pandas`
+- Writing results into a local SQLite or PostgreSQL database
+
+---
 
 ## Prerequisites
 
@@ -12,7 +16,11 @@ This is the steps for the basic part.
 * Basic understanding of command-line concepts.
 * Python 3.x installed.
 
-## Installation
+## 🚀 Getting Started
+
+This is the steps for the basic part.
+
+##  1️⃣ Installation
 
 1.  **Install Python:**
 
@@ -56,7 +64,7 @@ This is the steps for the basic part.
         pip install -r requirements.txt
         ```
 
-## Usage
+## 2️⃣ Usage
 
 1.  **Prepare the CSV File:**
 
@@ -80,7 +88,7 @@ This is the steps for the basic part.
         python data_engineering.py
         ```
 
-## Functionality
+## 3️⃣ Functionality
 
 The `data_engineering.py` script performs the following actions:
 
@@ -94,10 +102,15 @@ The `data_engineering.py` script performs the following actions:
 * Writes the aggregation results to a local SQLite database file named `sales_data.db` in a table named `sales_summary`.
 * Prints the first 5 rows from the `sales_summary` table to the console.
 
-## File Structure
+## 📦 Project Structure
 
-├── data.csv├── data_engineering.py├── venv/        # (Virtual environment directory - created by you)└── README.md
-## Data Validation
+├── venv/                     # Virtual environment
+├── data.csv                  # Sample input data
+├── data_engineering.py       # Main ETL script
+└── README.md                 # Documentation
+
+
+## 4️⃣ Data Validation
 
 The script uses a Pydantic model (`SalesData`) to validate the data from the CSV file. The model defines the expected data types for each column:
 
@@ -108,7 +121,7 @@ The script uses a Pydantic model (`SalesData`) to validate the data from the CSV
 
 If a row in the CSV file does not conform to this model, it is considered invalid, logged, and dropped from the data before aggregation.
 
-## Output
+## 5️⃣ Output
 
 The script produces two outputs:
 
@@ -140,3 +153,12 @@ The script includes error handling for the following:
 ## Logging
 
 The script uses the `logging` module to provide informative messages about its progress and any errors that occur.  Logs are written to the console.
+
+
+## 🔧 Built With
+
+- Python 3.x
+- pandas
+- pydantic
+- psycopg2
+- SQLAlchemy
