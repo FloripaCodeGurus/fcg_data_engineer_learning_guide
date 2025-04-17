@@ -105,8 +105,11 @@ The `data_engineering.py` script performs the following actions:
 ## 📦 Project Structure
 
 ├── venv/                     # Virtual environment
+
 ├── data.csv                  # Sample input data
+
 ├── data_engineering.py       # Main ETL script
+
 └── README.md                 # Documentation
 
 
